@@ -1,7 +1,7 @@
 import React from 'react'
 import {FiFacebook, FiInstagram, FiTwitter} from 'react-icons/fi'
 import {BsWhatsapp} from 'react-icons/bs'
-import sam from './data/sam3.jpg'
+import sam from './data/sam9.jpg'
 import {BsFillCalendar2DateFill} from 'react-icons/bs'
 import {AiFillGithub, AiOutlineMail, AiOutlineMenu} from 'react-icons/ai'
 import {MdArrowUpward} from 'react-icons/md'
@@ -9,31 +9,34 @@ import {FiPhoneCall} from 'react-icons/fi'
 
 
 const Portfolio = () => {
-   let navbars= document.querySelector('.navbars');
+  
+    let navbars= document.querySelector('.navbar');
 
     const handleToggles=()=>{
-        // navbar.classList.toggle('active');
+    
         navbars.classList.toggle('active')
     }
- let sections= document.querySelectorAll('section');
-    let navLinks= document.querySelectorAll('head-01 nav a');
 
- window.onscroll=()=>{
+ 
+    let sections= document.querySelectorAll('section');
+    let navLinks= document.querySelectorAll('header nav a');
+
+    window.onscroll=()=>{
         sections.forEach(sec => {
             let top =window.scrollY;
-            let offset= sec.offsetTop - 100;
-            let height= sec.offsetHeight; 
+            let offset= sec.offsetTop - 100
+            let height= sec.offsetHeight;
             let id= sec.getAttribute('id');
 
             if(top >= offset && top < offset + height) {
                 // active nav 
                 navLinks.forEach(links => {
                     links.classList.remove('active');
-                    document.querySelector('head-01 nav a[href*=' + id + ']').classList.add('active');
+                    document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
                 })
             }
         })
-        let header =document.querySelector('head-01');
+        let header =document.querySelector('header');
 
         header.classList.toggle('sticky',window.scrollY > 100);
 
@@ -42,27 +45,24 @@ const Portfolio = () => {
     }
   return (
     <div className='full-sam'>
-       
-        <div className='head-01 '>
-          <nav className='navbars '>
-            <a href="#home">  <h1> <span>He</span>nia</h1></a>
-          
-            <p className='p-01'>
-              <a href="#home" className='active'>Home</a>
-              <a href="#about">About</a>
-              <a href="#education">Education</a>
-              <a href="#skills">Skills</a>
-              <a href="#contact">Contact</a>
-            </p>
-            <div className="menu-bar"  >
-              <h4>
-                  <AiOutlineMenu size={30} />
-                </h4>
-            
 
-            </div>
-          </nav>
+                    
+<header className="header">
+    <a href="#" className="logo">Samuel <span>Henia</span> </a>
+    <div className='menu' id='menu-icon'>
+        <div className='' style={{fontSize:'20px',cursor:'pointer'}} onClick={()=>handleToggles()}  >
+        <AiOutlineMenu size={30} />
         </div>
+    </div>
+    <nav className="navbar">
+     <a href="#home" className="active">Home</a>
+     <a href="#about">About</a>
+     <a href="#education">Education</a> 
+     <a href="#skills">Skills</a>
+     <a href="#contact">Contact</a>
+     <span className="active-nav"></span>
+    </nav>
+</header>
        
        {/* home */}
        <section id='home' className='home-1'>
@@ -79,6 +79,7 @@ const Portfolio = () => {
           
          
         </div>
+         
        
         </p>
         <div className='btn-hm'>
@@ -94,6 +95,7 @@ const Portfolio = () => {
         </div>
       
       </div>
+    <div className='home-imgHover'></div>
        </section>
        {/* About */}
        <section id='about' className='about-01' >
@@ -109,7 +111,7 @@ const Portfolio = () => {
           <div className='story-01'>
         <p >
         Hello, My name is Samuel Henia. I create things that live on the internet. Back in highschool, I tried editing a simple digital calculator
-        with a perfect running code and then <span>Boom!</span> There was my first ever creation, I felt like  genius. That was when my interest in web development and design started.
+        with a perfect running code and then <span>Boom!</span> There was my first ever creation, I felt like a genius. That was when my interest in web development and design started.
         It taught me alot about HTML, CSS & JS! Fast forward to today, and I've had the privelege of working at student-led design studio and 
         an advertising agency. I am focused in building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.
         I have a couple of some of my projects posted in my github account. 
@@ -118,7 +120,7 @@ const Portfolio = () => {
         </div>
         <p className='tag-1'>click the button below to check out!</p>
         <div className='butto'>
-           <a href="">My Projects</a>
+           <a href="https://github.com/KKorosiv/KKorosiv">My Projects</a>
 
         </div>
        
@@ -167,7 +169,7 @@ const Portfolio = () => {
                           <div className="education-content">
                             <div className="content">
                                 <div className="year"> <i> <i><BsFillCalendar2DateFill size={18}/></i></i> 2021-2022</div>
-                                <h3>InternShip & Attachments - Collage</h3>
+                                <h3>InternShip & Attachments - College</h3>
                                 <p>
                                 During my 1<sup>st</sup> semister, i was very intersted in taking up an attachment
                                 in one of the Web Development company so that i could increase
@@ -336,7 +338,7 @@ const Portfolio = () => {
           <div className='icons-sam'>
                 <a href="https://wa.me/254746454686/?text=Hello,Thanks for reaching me,how about we create something great together?"><i> <BsWhatsapp size={50}/> </i></a>
                <a href='mailto:samuelhenia2@gmail.com'><i><AiOutlineMail size={50}/></i></a>
-               <a href='https://github.com'><i><AiFillGithub size={50}/></i></a>
+               <a href='https://github.com/KKorosiv/KKorosiv'><i><AiFillGithub size={50}/></i></a>
               
             </div>
          </div>
