@@ -1023,21 +1023,21 @@ section {
   }
 
   .about-01 {
-    width: 150%;
+    width: 200%;
   }
 
   .education {
-    width: 150%;
+    width: 200%;
     padding: 10% 15%;
   }
 
   .skills {
-    width: 150%;
+    width: 200%;
     padding: 10% 15%;
   }
 
   .contact-1 {
-    width: 150%;
+    width: 200%;
     padding: 8% 12%;
   }
 
@@ -1102,23 +1102,23 @@ section {
 
 @media (max-width:404px) {
   .about-01 {
-    width: 160%;
+    width: 200%;
   }
 
   .education {
-    width: 160%;
+    width: 200%;
   }
 
   .skills {
-    width: 160%;
+    width: 200%;
   }
 
   .contact-1 {
-    width: 160%;
+    width: 200%;
   }
 
   .futa {
-    width: 160%;
+    width: 200%;
   }
 
   .head-01 nav {
