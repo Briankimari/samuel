@@ -7,13 +7,16 @@
   outline: none;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  
 
 
 
 }
 
 html {
-  font-size: 67%;
+  font-size: 80%;
+  zoom: 80%;
+ 
 }
 
 :root {

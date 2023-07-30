@@ -110,7 +110,7 @@ const Portfolio = () => {
           </div>
           <div className='story-01'>
         <p >
-        Hello, My name is Samuel Henia.. I create things that live on the internet. Back in highschool, I tried editing a simple digital calculator
+        Hello, My name is Samuel Henia I create things that live on the internet. Back in highschool, I tried editing a simple digital calculator
         with a perfect running code and then <span>Boom!</span> There was my first ever creation, I felt like a genius. That was when my interest in web development and design started.
         It taught me alot about HTML, CSS & JS! Fast forward to today, and I've had the privelege of working at student-led design studio and 
         an advertising agency. I am focused in building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.
