@@ -78,7 +78,7 @@ const Portfolio = () => {
                     <h3>Frontend Developer</h3>
                 </div>
                 <p>
-                 A passionate developer bringing you programming
+                 A passionate remote developer bringing you programming
            and design from the future. I am experienced in developing 
            interactive web and desktop applications, cutting-edge,pixel-perfect,beautiful
             interfaces and intutively implemented UX<span>/</span>UI Design.
@@ -115,13 +115,13 @@ const Portfolio = () => {
         with a perfect running code and then <span>Boom!</span> There was my first ever creation, I felt like a genius. That was when my interest in web development and design started.
         It taught me alot about HTML, CSS & JS! Fast forward to today, and I've had the privelege of working at student-led design studio and 
         an advertising agency. I am focused in building accessible, inclusive products and digital experiences at Upstatement for a variety of clients.
-        I have a couple of some of my projects posted in my github account. 
+        I have a couple of projects posted in my github account. 
                     
              </p>
             
                
                  <p className="about-content" style={{color:'#fae206',fontStyle:'italic'}}>
-                    Click the button below to check out! 
+                    Click the button below to check them out! 
                     </p> 
            
             <div className="btn-box btns">
@@ -174,7 +174,7 @@ const Portfolio = () => {
                                 <div className="year"> <i> <i><BsFillCalendar2DateFill size={18}/></i></i> 2021-2022</div>
                                <h3>InternShip & Attachments - College</h3>
                                 <p>
-                                During my 1<sup>st</sup> semister, i was very intersted in taking up an attachment
+                                During my 1<sup>st</sup> semester, i was very interested in taking up an attachment
                                 in one of the Web Development company so that i could increase
                                 my knowledge and skills.
                                 <p>
@@ -237,7 +237,7 @@ const Portfolio = () => {
                                  <h3>Shopping App - Company</h3>
                                  <p>
                                      Created the front-end of a web application for customers using a responsive modern ui/ux,it
-                                     included ability of customers be able add Assets,products and services.
+                                     included ability of customers be able to select products, add to cart and purchase selected items. 
                                      The projects included a re-usable code for future reference.
                                      <p>
                                       The project also included a database highly secured and abiliy of customers be able to
